@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".TimeFragment"
+              android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:src="@drawable/parking_2"
+        android:layout_weight="1"
+        android:id="@+id/state1"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/icon_launcher"
+        android:id="@+id/state2"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:src="@drawable/parking_8"
+        android:layout_weight="1"
+        android:id="@+id/state3"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parking Time"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ss"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="70sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parking fee"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"/>
+
+    <TextView
+        android:id="@+id/fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        android:textColor="#000000"
+        android:textSize="60sp"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="140dp"
+            android:background="@drawable/cash"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/payfor"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</LinearLayout>

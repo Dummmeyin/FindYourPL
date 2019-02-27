@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapViewActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/parking_lot1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        android:textSize="25sp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="389dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="169dp">
+
+            <Button
+                android:id="@+id/arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parklot1"/>
+
+            <Button
+                android:id="@+id/arrow1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow"
+                app:layout_constraintTop_toBottomOf="@+id/parklot2"/>
+
+            <Button
+                android:id="@+id/arrow2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow1"
+                app:layout_constraintTop_toBottomOf="@+id/parklot3"/>
+
+            <Button
+                android:id="@+id/arrow3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow23"
+                app:layout_constraintTop_toBottomOf="@+id/parklot21"/>
+
+            <Button
+                android:id="@+id/arrow4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow2"
+                app:layout_constraintTop_toBottomOf="@+id/parklot4"/>
+
+            <Button
+                android:id="@+id/arrow7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow4"
+                app:layout_constraintTop_toBottomOf="@+id/parklot5"/>
+
+            <Button
+                android:id="@+id/arrow8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow7"
+                app:layout_constraintTop_toBottomOf="@+id/parklot11"/>
+
+            <Button
+                android:id="@+id/arrow9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toBottomOf="@+id/parklot13"
+                app:layout_constraintEnd_toStartOf="@+id/parklot13"/>
+
+            <Button
+                android:id="@+id/arrow10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/arrowright"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/arrow8"
+                app:layout_constraintTop_toBottomOf="@+id/parklot11"/>
+
+            <Button
+                android:id="@+id/arrow11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/arrow9"
+                app:layout_constraintTop_toBottomOf="@+id/arrow9"/>
+
+            <Button
+                android:id="@+id/arrow12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot20"
+                app:layout_constraintTop_toBottomOf="@+id/arrow9"/>
+
+            <Button
+                android:id="@+id/arrow14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowleft"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/arrow12"
+                app:layout_constraintTop_toBottomOf="@+id/parklot17"/>
+
+            <Button
+                android:id="@+id/arrow15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowleft"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/arrow14"
+                app:layout_constraintTop_toBottomOf="@+id/parklot17"/>
+
+            <Button
+                android:id="@+id/arrow24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowup"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/arrow14"
+                app:layout_constraintTop_toBottomOf="@+id/parklot15"/>
+
+            <Button
+                android:id="@+id/arrow16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/arrow14"
+                app:layout_constraintTop_toBottomOf="@+id/parklot17"/>
+
+            <Button
+                android:id="@+id/arrow17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot23"
+                app:layout_constraintTop_toBottomOf="@+id/parklot17"/>
+
+            <Button
+                android:id="@+id/arrow18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="104dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot31"
+                app:layout_constraintTop_toBottomOf="@+id/parklot17"/>
+
+            <Button
+                android:id="@+id/arrow19"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowleft"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/arrow18"
+                app:layout_constraintTop_toBottomOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/arrow20"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/arrowup"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toTopOf="@+id/arrow21"
+                app:layout_constraintEnd_toStartOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/arrow22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="56dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/arrowup"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toTopOf="@+id/arrow21"
+                app:layout_constraintEnd_toStartOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/arrow21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/arrowup"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/arrow19"
+                app:layout_constraintTop_toBottomOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/arrow13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="104dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot22"
+                app:layout_constraintTop_toBottomOf="@+id/arrow9"/>
+
+            <Button
+                android:id="@+id/arrow23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="152dp"
+                android:background="@drawable/arrowdown"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/arrow13"
+                app:layout_constraintTop_toBottomOf="@+id/arrow9"/>
+
+            <Button
+                android:id="@+id/parklot1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/parklotred"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/parklotred"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot1"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot2"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot3"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot4"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot5"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toEndOf="@+id/parklot11"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="88dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/parklot14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot13"
+                app:layout_constraintTop_toBottomOf="@+id/parklot11"/>
+
+            <Button
+                android:id="@+id/parklot15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot14"
+                app:layout_constraintTop_toBottomOf="@+id/parklot11"/>
+
+            <Button
+                android:id="@+id/parklot16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot15"
+                app:layout_constraintTop_toTopOf="@+id/parklot15"/>
+
+            <Button
+                android:id="@+id/parklot17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/parklot14"
+                app:layout_constraintTop_toBottomOf="@+id/parklot14"/>
+
+            <Button
+                android:id="@+id/parklot18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/parklot13"
+                app:layout_constraintTop_toBottomOf="@+id/parklot13"/>
+
+            <Button
+                android:id="@+id/parklot20"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/parklot13"
+                app:layout_constraintTop_toBottomOf="@+id/parklot18"/>
+
+            <Button
+                android:id="@+id/parklot21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/parklot13"
+                app:layout_constraintTop_toBottomOf="@+id/parklot20"/>
+
+            <Button
+                android:id="@+id/parklot22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot21"
+                app:layout_constraintTop_toTopOf="@+id/parklot21"/>
+
+            <Button
+                android:id="@+id/parklot23"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot22"
+                app:layout_constraintTop_toTopOf="@+id/parklot22"/>
+
+            <Button
+                android:id="@+id/parklot24"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toStartOf="@+id/parklot23"
+                app:layout_constraintTop_toTopOf="@+id/parklot22"/>
+
+            <Button
+                android:id="@+id/parklot25"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toTopOf="@+id/parklot24"
+                app:layout_constraintEnd_toEndOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/parklot26"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toTopOf="@+id/parklot24"
+                app:layout_constraintEnd_toEndOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/parklot27"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toTopOf="@+id/parklot26"
+                app:layout_constraintEnd_toEndOf="@+id/parklot24"/>
+
+            <Button
+                android:id="@+id/parklot28"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/parklot16"
+                app:layout_constraintTop_toBottomOf="@+id/parklot16"/>
+
+            <Button
+                android:id="@+id/parklot29"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintEnd_toEndOf="@+id/parklot30"
+                app:layout_constraintTop_toBottomOf="@+id/parklot30"/>
+
+            <Button
+                android:id="@+id/parklot30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintBottom_toBottomOf="@+id/parklot26"
+                app:layout_constraintEnd_toStartOf="@+id/parklot26"/>
+
+            <Button
+                android:id="@+id/parklot31"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/parklotgray"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                app:layout_constraintStart_toStartOf="@+id/parklot23"
+                app:layout_constraintTop_toBottomOf="@+id/parklot23"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ctrl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="268dp"
+        android:text="@string/selectThisOne"
+        app:layout_constraintBottom_toBottomOf="@+id/ctrl3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/selectThisOne"/>
+
+    <Button
+        android:id="@+id/ctrl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/finish"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ctrl1"
+        tools:text="@string/finish"/>
+
+    <Button
+        android:id="@+id/ctrl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/ctrl3"
+        app:layout_constraintStart_toEndOf="@+id/ctrl3"
+        tools:text="@string/cancel"/>
+
+
+</android.support.constraint.ConstraintLayout>

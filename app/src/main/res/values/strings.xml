@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FindYourPL</string>
+    <string name="title_home">Start</string>
+    <string name="title_dashboard">Service</string>
+    <string name="title_notifications">Me</string>
+    <string name="parking_lot1">Building D Parking Lot</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="selectThisOne">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish">Finish</string>
+    <string name="config">Config</string>
+    <string name="payfor">支付车费</string>
+    <string name="gofor">反向寻车</string>
+    <string name="findPL">寻找车位</string>
+</resources>
